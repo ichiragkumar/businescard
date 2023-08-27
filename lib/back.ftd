@@ -4,7 +4,7 @@ ftd.image-src logo:
 
 -- ftd.column:
 width.fixed.px: 700
-height.fixed.px: 350
+height.fixed.px: 450
 background.solid: $inherited.colors.background.base
 border-width.px: 1
 border-color: $inherited.colors.border
@@ -16,14 +16,14 @@ background.image: $back-bg
 align-content: center
 
 -- ftd.image: $back.logo
-max-width.fixed.px: 100
+max-width.fixed.px: 120
 
 -- ftd.text: $back.company
 role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
 width: fill-container
 text-align: center
-margin-top.px: 16
+margin-top.px: 20
 
 -- end: ftd.column
 

@@ -17,11 +17,13 @@ background.solid: $inherited.colors.background.base
 spacing: space-around
 border-width.px: 1
 border-color: $inherited.colors.border
+border-radius.px: 12
 
 -- ftd.column:
-width.fixed.percent: 50
-padding-vertical.px: 40
-padding-left.px: 40
+width.fixed.percent: 40
+padding-vertical.px: 35
+height.fixed.px: 115
+padding-left.px: 60
 
 -- ftd.text: $front.name
 color: $inherited.colors.text-strong
@@ -50,15 +52,17 @@ info-1: $front.location
 -- end: ftd.column
 
 -- ftd.column:
-width.fixed.percent: 50
+width.fixed.percent: 40
 background.image: $logo-bg
+border-radius.px: 5
 height: fill-container
 align-content: center
 
 -- ftd.image:
 src: $front.logo
 width.fixed.px: 80
-margin-left.px: 120
+border-radius.px: 5
+margin-left.px: 140
 
 -- ftd.text: $front.company
 color: white
@@ -93,7 +97,7 @@ margin-bottom.px: 10
 
 -- ftd.image:
 src: $image-and-info.image
-width.fixed.px: 35
+width.fixed.px: 25
 
 -- ftd.column:
 width: fill-container
@@ -122,7 +126,7 @@ if: { image-and-info.info-2 != NULL }
 width.fixed.px: 50
 border-color: red
 border-bottom-width.px: 3
-margin-top.px: 5
+margin-top.px: 2
 margin-bottom.px: 20
 
 -- end: ftd.row
@@ -142,3 +146,6 @@ src: $assets.files.assets.logo-bg.svg
 size: contain
 position: right
 repeat: no-repeat
+border-width.px: 1
+border-color: $inherited.colors.border
+border-radius.px: 12
